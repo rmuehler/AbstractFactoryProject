@@ -2,11 +2,13 @@
 
 namespace AbstractFactoryApp
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Out.WriteLine("What type of food do you want?: ");
+            string input = Console.ReadLine();
+            var factory = GetFactory.Get(input);
         }
     }
 }

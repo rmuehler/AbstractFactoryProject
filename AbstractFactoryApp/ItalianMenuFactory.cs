@@ -4,24 +4,12 @@ namespace AbstractFactoryApp
 {
     public class ItalianMenuFactory : IMenuFactory
     {
-        public IMenu GenerateAppetizerMenu()
-        {
-            return new ItalianAppetizer();
-        }
+        public IMenu GenerateAppetizerMenu() => new ItalianAppetizer();
 
-        public IMenu GenerateMainMenu()
-        {
-            return new ItalianMain();
-        }
+        public IMenu GenerateMainMenu() => new ItalianMain();
 
-        public IMenu GenerateDessertMenu()
-        {
-            return new ItalianDessert();
-        }
+        public IMenu GenerateDessertMenu() => new ItalianDessert();
 
-        public IMenu GenerateDrinkMenu()
-        {
-            return new ItalianDrink();
-        }
+        public IMenu GenerateDrinkMenu() => new ItalianDrink();
     }
 }

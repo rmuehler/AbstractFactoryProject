@@ -1,4 +1,6 @@
-﻿namespace AbstractFactoryApp
+﻿using System;
+
+namespace AbstractFactoryApp
 {
     public static class GetFactory
     {
@@ -6,12 +8,16 @@
         {
             switch (input)
             {
-                case "Italian":
+                case "italian":
                     return new ItalianMenuFactory();
-                case "French":
+                case "french":
                     return new FrenchMenuFactory();
-                default:
+                case "exit":
+                    Console.WriteLine("exiting program, but here is the Italian menu...");
                     return new ItalianMenuFactory();
+                default:
+                    Console.WriteLine("Invalid input, but here is the French menu...");
+                    return new FrenchMenuFactory();
             }
         }
     }

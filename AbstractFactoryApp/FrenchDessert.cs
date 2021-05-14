@@ -4,9 +4,7 @@ namespace AbstractFactoryApp
 {
     public class FrenchDessert : IMenu
     {
-        public void PrintMenu()
-        {
-            Console.WriteLine("Crepes, Creme Brule, Creme Caramel, Madelenines, Chocolate Mousse");
-        }
+        public void PrintMenu() => Console.WriteLine("Crepes, Creme Brule, Creme Caramel, Madelenines, Chocolate Mousse");
+        
     }
 }

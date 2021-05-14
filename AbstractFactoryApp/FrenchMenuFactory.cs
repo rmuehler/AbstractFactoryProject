@@ -2,24 +2,16 @@
 {
     public class FrenchMenuFactory : IMenuFactory
     {
-        public IMenu GenerateAppetizerMenu()
-        {
-            return new FrenchAppetizer();
-        }
+        public IMenu GenerateAppetizerMenu() => new FrenchAppetizer();
 
-        public IMenu GenerateMainMenu()
-        {
-            return new FrenchMain();
-        }
 
-        public IMenu GenerateDessertMenu()
-        {
-            return new FrenchDessert();
-        }
+        public IMenu GenerateMainMenu() => new FrenchMain();
 
-        public IMenu GenerateDrinkMenu()
-        {
-            return new FrenchDrink();
-        }
+
+        public IMenu GenerateDessertMenu() => new FrenchDessert();
+ 
+
+        public IMenu GenerateDrinkMenu() => new FrenchDrink();
+
     }
 }

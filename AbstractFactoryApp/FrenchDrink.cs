@@ -4,9 +4,7 @@ namespace AbstractFactoryApp
 {
     public class FrenchDrink : IMenu
     {
-        public void PrintMenu()
-        {
-            Console.WriteLine("Absinthe, Cognac, Cidre, Champagne, Perrier");
-        }
+        public void PrintMenu() => Console.WriteLine("Absinthe, Cognac, Cider, Champagne, Perrier");
+        
     }
 }

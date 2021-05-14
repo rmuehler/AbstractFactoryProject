@@ -4,9 +4,7 @@ namespace AbstractFactoryApp
 {
     public class FrenchMain : IMenu
     {
-        public void PrintMenu()
-        {
-            Console.WriteLine("Streak Frites, Chicken Cordon Bleu, Quiche");
-        }
+        public void PrintMenu() => Console.WriteLine("Streak Frites, Chicken Cordon Bleu, Quiche");
+        
     }
 }
